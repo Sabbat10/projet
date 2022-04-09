@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: normal;
+}
+* a{
+    color: rgb(230, 144, 16);
+}
+* a:hover{
+   color: rgb(92, 29, 151);
+}
+body{
+    background-color: aliceblue;
+}
+.En_tete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+h1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(38, 38, 136);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+}
+.logo p img{
+    margin: 10px;
+    border: 1px solid;
+    border-radius: 100%;
+}
+.progamming{
+    background-color: rgb(122, 180, 245);
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: ;
+    margin: 10px;
+    padding: 20px;
+}
+.progamming h1{
+    text-align: center;
+}
+.progamming img{
+    border-radius: 100%;
+}
+.sous{
+    margin: 0;
+    display: none;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top: none;
+    background-color: rgb(233, 224, 210);
+}
+.sous a{
+    color: tomato;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+    font-size: 1.3em;
+}
+.sous li{
+    padding-bottom: 15px;
+}
+.sous a:hover{
+    color: blue;
+}
+.deroulant:hover .sous{
+    display: block;
+    position: absolute;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 10px;
+}¨
+ul li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+ul li a{
+    padding: 10px;
+    margin: 5px;
+    font-size: 1.6em;
+}
+.carte{
+    display: flex;
+    flex-direction: row;
+    text-align: justify;
+    padding: 10px;
+    margin: 10px;
+}
+.carte_passe{
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 5px;
+    box-shadow: 10px 10px 1px rgb(122, 180, 245);
+}
+.carte h3{
+    text-align: center;
+    color: rgb(226, 142, 17);
+}
+.footer{
+    color: black;
+    padding-top: 10px;
+    padding: 5px;
+    margin: 50px;
+    border: 2px solid blue;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+   
+    justify-content: space-around;
+    background-color: rgb(211, 204, 204);
+}
+.footer h3{
+    color: black;
+    text-align: center;
+}
+.footer p{
+    color: black;
+    text-align: center;
+}
+.footer a{
+    font-size: 1.1em;
+}
+.footer p em{
+    border: 1px solid;
+    border-radius: 100%;
+    padding: 2px;
+    color: rgb(0, 0, 252);
+}
+.liens_media .phone .a{
+    display: none;
+}
+/**************************************************************************************************************************************/
+/* Media query et responsivité */
+
+@media all and (max-width: 991px)
+{
+    * a{
+        padding: ;
+    }
+    ul{
+        display: none;
+    }
+    input{
+        display: none;
+    }
+    input[type=checkbox]:checked + ul{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .liens_media .phone .a{
+        display: block;
+        flex-direction: column;
+        padding: 20px;
+        font-size: 1.9em;
+        color: tomato;
+        margin-left: 300px;
+    }
+    .liens_media .phone:hover ul{
+        display: block;
+        flex-direction: column;
+        background-color: black;
+        position: relative;
+        margin-right: 10px;
+    }
+    .liens_media .phone:hover .sous{
+        display: none;
+    }
+    .deroulant:hover .sous{
+        display: block;
+        flex-direction: column;
+    }
+    .logo h1{
+        position: absolute;
+    }
+    .logo img{
+        display: none;
+    }
+    .progamming img{
+        display: none;
+    }
+    .progamming p{
+        text-align: justify;
+        font-size: 1.5em;
+    }
+    .carte{
+        display: block;
+        flex-direction: column;
+        margin: 0;
+    }
+    .carte_passe{
+        box-shadow: none;
+    }
+    .carte_passe h3{
+        font-size: 1.6em;
+    }
+    .carte_passe p{
+        font-size: 1.5em;
+    }
+    .footer{
+        border: none;
+        font-size: 1.4em;
+        margin: 0;
+        padding: 2px;
+    }
+    .footer ul{
+        display: block;
+        flex-direction: column;
+    }
+}    
